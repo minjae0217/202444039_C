@@ -1,1 +1,52 @@
+#include<stdio.h>
 
+
+int main()
+{
+    system("title 정수형 데이터의 자릿수 지정 형식");
+
+    printf("|%d|",358); 
+    printf(":정수형 기본 자릿수\n");
+
+    printf("|%5d|",358);
+    printf(":전체 자릿수 5개\n");
+
+    printf("|%05d|",358);
+    printf(":전체 자릿수는 5개이고 빈칸은 0으로 채움\n");
+
+
+//더하기 빼기 곱하기 나누기 식
+    int e;
+    printf("계산식을 선택하시오 1.더하기 2.빼기 3.곱하기 4.나누기");
+    scanf("%d",&e);
+    
+    int a,b;
+    printf("정수를 입력하세요\n");
+    scanf("%d",&a);
+    printf("정수를 입력하세요\n");
+    scanf("%d",&b);
+    
+    if(e==1)
+    {
+        int c=a+b;
+        printf("%d+%d=%d\n",a,b,c);
+    }
+
+    else if(e==2)
+    {
+        int c=a-b;
+        printf("%d-%d=%d\n",a,b,c);
+    }
+    else if(e==3)
+    {
+        int c=a*b;
+        printf("%d*%d=%d\n",a,b,c);
+    }
+    else
+    {
+        int c=a/b;
+        printf("%d/%d=%d\n",a,b,a/b);
+    }
+
+    return 0;
+}
