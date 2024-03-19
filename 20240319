@@ -16,7 +16,7 @@ int main()
 
 
 //더하기 빼기 곱하기 나누기 식
-    int e;
+     int e;
     printf("계산식을 선택하시오 1.더하기 2.빼기 3.곱하기 4.나누기");
     scanf("%d",&e);
     
@@ -28,23 +28,19 @@ int main()
     
     if(e==1)
     {
-        int c=a+b;
-        printf("%d+%d=%d\n",a,b,c);
+        printf("%d+%d=%d\n",a,b,a+b);
     }
 
     else if(e==2)
     {
-        int c=a-b;
-        printf("%d-%d=%d\n",a,b,c);
+        printf("%d-%d=%d\n",a,b,a-b);
     }
     else if(e==3)
     {
-        int c=a*b;
-        printf("%d*%d=%d\n",a,b,c);
+        printf("%d*%d=%d\n",a,b,a*b);
     }
     else
     {
-        int c=a/b;
         printf("%d/%d=%d\n",a,b,a/b);
     }
 
