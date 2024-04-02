@@ -18,6 +18,81 @@ int main()
     }
       printf("1~10까지의 합 : %d",sum);
       //1~10까지의 합 코드
+
+    int jumsu;
+    char grade;
+
+    printf("점수 입력 :");
+    scanf("%d",&jumsu);
+
+    if(jumsu >= 90)
+    {
+        grade = 'A';
+    }
+    
+    else if(jumsu >= 80)
+    {
+        grade = 'B';
+    }
+    else if(jumsu >= 70)
+    {
+        grade = 'C';
+    }
+    else if(jumsu >= 60)
+    {
+        grade = 'D';
+    }
+     else
+    {
+        grade = 'F';
+    }
+    printf("당신의 등급은 : %c",grade);
+//시험 등급 코드
+
+    int x,y;
+    char op;
+    scanf("%d %c %d",&x,&op,&y);
+    if(op == '+')
+    {
+        printf("%d %c %d = %d",x,op,y,x+y);
+    }
+    else if(op == '-')
+    {
+        printf("%d %c %d = %d",x,op,y,x-y);
+    }
+     else if(op == '*')
+    {
+       printf("%d %c %d = %d",x,op,y,x*y);
+    }
+     else if(op == '/')
+    {
+       printf("%d %c %d = %d",x,op,y,x/y);
+    }
+//if문
+    switch(op)
+    {
+        case '+':
+        printf("%d %c %d = %d",x,op,y,x+y);
+        break;
+
+        case '-':
+        printf("%d %c %d = %d",x,op,y,x-y);
+        break;
+
+        case '*':
+        printf("%d %c %d = %d",x,op,y,x*y);
+        break;
+
+        case '/':
+        printf("%d %c %d = %d",x,op,y,x/y);
+        break;
+//sweak문
+
+
+}
+//4칙연산
+
+
       
 
 
